@@ -1,0 +1,7 @@
+//字符串批量替换
+UPDATE article SET  
+`Content` = REPLACE(  `Content` ,  'vcb.rntd.cn',  'www.clubmp.cn' ) 
+WHERE  `Content` LIKE  '%vcb.rntd.cn%' and ID=22
+
+//修改主键自增 起始值
+alter table users AUTO_INCREMENT=123456;
